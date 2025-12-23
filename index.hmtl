@@ -1,104 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vintage Car Garage</title>
-    
-      <style>
-        table {
-            width: 100%;
-            text-align: center;
-
-
-        }
-
-        table, th, tr, td {
-            border: 2px solid black;
-            border-collapse: collapse;
-            padding: 5px;
-        }
-
-        tr:nth-child(odd) {
-            background-color: peru;
-        }
-
-    </style>
-
+    <title>Project sign-up </title>
     <link rel="stylesheet" href="signup_login_home.css">
-    	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
-
 <body>
-   
-      
-                  <!-- Navbar code start form here -->
-    <header>
-        <div class="navbar">
-        <nav>
-            <ul>
-                <li> <a href="#">HOME</a> </li>
-                <li> <a href="#">SERVICES</a> </li>
-                <li> <a href="#">OUR WORK</a> </li>
-                <li> <a href="#">ABOUT US</a> </li>
-                <li> <a href="#">CONTACT</a> </li>
-                <li> <a href="#"> BOOK ONLINE</a> </li>
-                <li><i class="fa-duotone fa-solid fa-circle-user"></i>
-                 <a href="#">Log in</a></li>
-            </ul>
-           
-             
-        </nav>
+    
+<div class="main">
+
+  <div class="cards">
+   <form >
         
-        </div>
-    </header>
+    <h1>Welcome</h1>
+      <h2>Sign-Up</h2><br><br>
 
-                          <!-- Main code start from here -->
-           
-    <main>
+        <p id="errname"></p>
 
-        <section id="firstpage">
-            
+        <input type="text"id='name' placeholder="Enter Name"><br><br>
 
-              <div>
-                
-                <i class="fa-brands fa-instagram fa-beat-fade"></i>
-                <i class="fa-brands fa-facebook fa-beat-fade"></i>
-                <i class="fa-brands fa-pinterest-p fa-beat-fade"></i><br>
-            </div>
+        <p id="errnumber"></p>
 
+        <input type="text"id='number' placeholder="Enter number"><br><br>
 
-             </section>
+        <p id="erremail"></p>
 
+         <input type="text"id='email' placeholder="Enter email"><br><br>
 
+         <p id="errpass"></p>
 
-            </main>
+          <input type="text"id='pass' placeholder="Enter password"><br><br>
 
-            
-             <section>
+         <p id="errcpass"></p>
 
-                 <table id="yug">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>EMAIL</th>
-                <th>BODY</th>
-            </tr>
-        </thead>
+          <input type="text"id='cpass' placeholder="Enter confirm password"><br><br>
 
-        <tbody id="data_show">
-
-        </tbody>
-    </table>
-   
+          <br><br>
+          <input type="submit" value="Sign Up" onclick="return FormValidate()">
 
 
-    </section>
+     </form>
+    </div>
+
+
+</div>
+
+
+
+
+   <script src="signup_login_home.js"></script>
+
 
 </body>
 </html>
